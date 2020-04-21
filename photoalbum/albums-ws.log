@@ -812,3 +812,52 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) [spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
 
 2020-04-21 16:07:32.487  INFO 6949 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-21 16:13:25.661  INFO 8747 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
+2020-04-21 16:13:26.323  INFO 8747 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ad6cde16-7bf2-3f32-aec4-631aee38bff4
+2020-04-21 16:13:26.401  INFO 8747 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$44e5b4b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-21 16:13:26.720  INFO 8747 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-04-21 16:13:26.726  INFO 8747 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 16:13:26.727  INFO 8747 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-21 16:13:26.783  INFO 8747 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 16:13:26.783  INFO 8747 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1081 ms
+2020-04-21 16:13:26.824  WARN 8747 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-21 16:13:26.824  INFO 8747 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-21 16:13:26.827  WARN 8747 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-21 16:13:26.827  INFO 8747 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-21 16:13:26.968  INFO 8747 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-21 16:13:27.167  WARN 8747 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-21 16:13:27.764  INFO 8747 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 44479 (http) with context path ''
+2020-04-21 16:13:27.765  INFO 8747 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 44479
+2020-04-21 16:13:27.771  INFO 8747 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-21 16:13:27.819  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-21 16:13:27.998  INFO 8747 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-21 16:13:27.999  INFO 8747 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-21 16:13:28.132  INFO 8747 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-21 16:13:28.132  INFO 8747 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-21 16:13:28.309  INFO 8747 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-21 16:13:28.329  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-21 16:13:28.329  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-21 16:13:28.329  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-21 16:13:28.329  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-21 16:13:28.329  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-21 16:13:28.329  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-21 16:13:28.329  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-21 16:13:28.497  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-21 16:13:28.499  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-04-21 16:13:28.502  INFO 8747 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-21 16:13:28.511  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1587500008510 with initial instances count: 1
+2020-04-21 16:13:28.512  INFO 8747 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
+2020-04-21 16:13:28.513  INFO 8747 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1587500008513, current=UP, previous=STARTING]
+2020-04-21 16:13:28.515  INFO 8747 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:e24e878eb16b90c3e7c4f7c8eec301f7: registering service...
+2020-04-21 16:13:28.522  INFO 8747 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 4.141 seconds (JVM running for 4.856)
+2020-04-21 16:13:28.623  INFO 8747 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:e24e878eb16b90c3e7c4f7c8eec301f7 - registration status: 204
+2020-04-21 16:18:28.335  INFO 8747 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-21 16:19:10.608  INFO 8747 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ALBUMS-WS with eureka with status DOWN
+2020-04-21 16:19:10.610  WARN 8747 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1587500350610, current=DOWN, previous=UP]
+2020-04-21 16:19:10.611  INFO 8747 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:e24e878eb16b90c3e7c4f7c8eec301f7: registering service...
+2020-04-21 16:19:10.616  INFO 8747 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-21 16:19:10.617  INFO 8747 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:e24e878eb16b90c3e7c4f7c8eec301f7 - registration status: 204
+2020-04-21 16:19:10.618  INFO 8747 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-21 16:19:13.620  INFO 8747 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-04-21 16:19:13.636  INFO 8747 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:e24e878eb16b90c3e7c4f7c8eec301f7 - deregister  status: 200
+2020-04-21 16:19:13.655  INFO 8747 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
