@@ -28,7 +28,8 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
                                   HttpServletResponse res,
                                   FilterChain chain) throws IOException, ServletException {
     System.out.println("aca");
-    String authorizationHeader = req.getHeader(environment.getProperty("authorization.token.header.name"));
+    System.out.println(req.getHeader("token"));
+    String authorizationHeader = req.getHeader(environment.getProperty("authorization.header.token.name"));
     System.out.println("authorizationHeader = " + authorizationHeader);
 
     if (authorizationHeader == null || !authorizationHeader.startsWith(environment.getProperty("authorization.token.header.prefix"))) {
