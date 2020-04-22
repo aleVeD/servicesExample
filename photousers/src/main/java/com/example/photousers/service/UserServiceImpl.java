@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService {
  // RestTemplate restTemplate;
   AlbumServiceClients albumServiceClients;
   Environment env;
-  //Logger logger = LoggerFactory.getLogger(this.getClass());
+  //Logger logger =  LoggerFactory.getLogger(this.getClass());
 @Autowired
   public UserServiceImpl(UsersRepository usersRepository, BCryptPasswordEncoder bCryptPasswordEncoder, Environment env, AlbumServiceClients albumServiceClients) {
     this.usersRepository = usersRepository;
@@ -85,6 +85,7 @@ public class UserServiceImpl implements UserService {
  //   });
 
    // List<AlbumResponseModel> albumList = albumListResponse.getBody();
+
     List<AlbumResponseModel> albumList = albumServiceClients.getAlbums(userId);
     userDto.setAlbums(albumList);
     return userDto;
